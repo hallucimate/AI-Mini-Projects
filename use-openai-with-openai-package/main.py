@@ -25,7 +25,7 @@ print("[INFO] Prompt: " + prompt)
 
 openai = OpenAI()
 
-# Uses the older Chat Completions API 
+# Uses the older Chat Completions API: https://api.openai.com/v1/chat/completions
 response = openai.chat.completions.create(model="gpt-6-luna", reasoning_effort="none", messages=[{"role": "user", "content":  prompt}])
 
 print("\n:::.. A fun fact provided by Open AI ..:::")

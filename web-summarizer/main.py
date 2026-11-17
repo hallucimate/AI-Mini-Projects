@@ -30,6 +30,7 @@ load_dotenv()
 # ------------- Use openai api -------------# 
 client = OpenAI()
 
+# use the new responsses API: https://api.openai.com/v1/responses
 response_ai = client.responses.create(
     model="gpt-5-mini",
     instructions="Summarize the following webpage in 3 bullet points.",
