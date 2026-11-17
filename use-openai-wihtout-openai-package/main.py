@@ -38,6 +38,7 @@ payload = {
 }
 
 # Post the request:
+# Uses the older Chat Completions API: https://api.openai.com/v1/chat/completions
 response = requests.post(
     "https://api.openai.com/v1/chat/completions",
     headers=headers,
